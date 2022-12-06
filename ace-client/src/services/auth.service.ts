@@ -5,7 +5,6 @@ import { ApiResponse } from "../types/apiResponce";
 const BASE_URL = process.env.BASE_URL || "http://localhost:5000/api";
 const V1 = "v1.0";
 export const login = (username: string, password: string) => {
-
   return axios
     .post(`${BASE_URL}/${V1}/auth/login`, {
       userName:username,
